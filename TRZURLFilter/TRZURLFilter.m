@@ -10,20 +10,25 @@
 
 @interface TRZURLFilter ()
 
-@property (nonatomic) NSMutableArray *filteringURLs;
+@property (nonatomic) NSMutableSet *filteringURLs;
 
 @end
 
 @implementation TRZURLFilter
 
 - (void)commonInit {
-    _filteringURLs = [[NSMutableArray alloc]init];
-    NSString *path = @"filteringURLs";
-    NSString *string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    [string enumerateLinesUsingBlock:^(NSString *line, BOOL *stop) {
-        NSLog(@"%@", line);
-        [_filteringURLs addObject:string];
-    }];
+    NSString *directory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString *filePath = [directory stringByAppendingPathComponent:@"filteringURLs.dat"];
+    NSSet *set = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+    if (set) {
+        _filteringURLs = [[NSMutableSet alloc] initWithSet:set];
+        for (NSString *str in _filteringURLs) {
+            NSLog(@"data loaded:%@", str);
+        }
+    } else {
+        _filteringURLs = [[NSMutableSet alloc] init];
+        NSLog(@"%@", @"no data");
+    }
 }
 
 - (id)init {
@@ -43,7 +48,6 @@
     return self;
 }
 
-
 - (void)addFilteringURLString:(NSString *)string {
     NSString *host = [[NSURL URLWithString:string] host];
     if (host) {
@@ -55,20 +59,23 @@
 
 - (void)addFilteringURLs:(NSArray *)urlArray {
     for (NSString *urlString in urlArray) {
-        [_filteringURLs addObject:urlString];
+        [self addFilteringURLString:urlString];
     }
 }
 
-- (void)deleteFilteringURLString:(NSString *)string {
-    
+- (void)removeFilteringURLString:(NSString *)string {
+    NSString *host = [[NSURL URLWithString:string] host];
+    if (host) {
+        [_filteringURLs removeObject:host];
+    }
 }
 
-- (void)deleteAllFilteringURLs {
-    
+- (void)removeAllFilteringURLs {
+    [_filteringURLs removeAllObjects];
 }
 
-- (NSArray *)filteringURLs {
-    NSArray *filteringURLs = [[NSArray alloc] initWithArray:_filteringURLs];
+- (NSSet *)filteringURLs {
+    NSSet *filteringURLs = [[NSSet alloc] initWithSet:_filteringURLs];
     return filteringURLs;
 }
 
@@ -81,5 +88,16 @@
     return testResult;
 }
 
+- (BOOL)saveChanges {
+    NSString *directory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString *filePath = [directory stringByAppendingPathComponent:@"filteringURLs.dat"];
+    BOOL successful = [NSKeyedArchiver archiveRootObject:_filteringURLs toFile:filePath];
+    if (successful) {
+        NSLog(@"%@", @"save complete");
+    } else {
+        NSLog(@"%@", @"save failed");
+    }
+    return successful;
+}
 
 @end

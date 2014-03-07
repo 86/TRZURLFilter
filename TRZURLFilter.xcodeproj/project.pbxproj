@@ -22,7 +22,6 @@
 		28798D9218C61187006A247B /* TRZURLFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9118C61187006A247B /* TRZURLFilterTests.m */; };
 		28798D9D18C61456006A247B /* TRZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9C18C61456006A247B /* TRZViewController.m */; };
 		28798DA018C6252D006A247B /* TRZURLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9F18C6252D006A247B /* TRZURLFilter.m */; };
-		28798DA218C636E7006A247B /* filteringURLs in Resources */ = {isa = PBXBuildFile; fileRef = 28798DA118C636E7006A247B /* filteringURLs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		28798D9C18C61456006A247B /* TRZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZViewController.m; sourceTree = "<group>"; };
 		28798D9E18C6252D006A247B /* TRZURLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZURLFilter.h; sourceTree = "<group>"; };
 		28798D9F18C6252D006A247B /* TRZURLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZURLFilter.m; sourceTree = "<group>"; };
-		28798DA118C636E7006A247B /* filteringURLs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filteringURLs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				28798D6D18C61187006A247B /* Supporting Files */,
 				28798D9E18C6252D006A247B /* TRZURLFilter.h */,
 				28798D9F18C6252D006A247B /* TRZURLFilter.m */,
-				28798DA118C636E7006A247B /* filteringURLs */,
 			);
 			path = TRZURLFilter;
 			sourceTree = "<group>";
@@ -240,7 +237,6 @@
 				28798D7F18C61187006A247B /* Images.xcassets in Resources */,
 				28798D7118C61187006A247B /* InfoPlist.strings in Resources */,
 				28798D7A18C61187006A247B /* Main.storyboard in Resources */,
-				28798DA218C636E7006A247B /* filteringURLs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +467,7 @@
 				28798D9718C61187006A247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28798D9818C61187006A247B /* Build configuration list for PBXNativeTarget "TRZURLFilterTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +476,7 @@
 				28798D9A18C61187006A247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

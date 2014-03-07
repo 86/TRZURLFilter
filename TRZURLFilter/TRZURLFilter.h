@@ -10,11 +10,12 @@
 
 @interface TRZURLFilter : NSObject
 
-- (BOOL)testFilterWithTargetURLString:(NSString *)string;
 - (void)addFilteringURLString:(NSString *)string;
 - (void)addFilteringURLs:(NSArray *)urlArray;
-- (void)deleteFilteringURLString:(NSString *)string;
-- (void)deleteAllFilteringURLs;
-- (NSArray *)filteringURLs;
+- (void)removeFilteringURLString:(NSString *)string;
+- (void)removeAllFilteringURLs;
+- (BOOL)testFilterWithTargetURLString:(NSString *)string;
+- (BOOL)saveChanges;
+- (NSSet *)filteringURLs;
 
 @end
