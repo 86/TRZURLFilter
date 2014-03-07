@@ -14,13 +14,15 @@
 		28798D7318C61187006A247B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D7218C61187006A247B /* main.m */; };
 		28798D7718C61187006A247B /* TRZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D7618C61187006A247B /* TRZAppDelegate.m */; };
 		28798D7A18C61187006A247B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28798D7818C61187006A247B /* Main.storyboard */; };
-		28798D7D18C61187006A247B /* TRZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D7C18C61187006A247B /* TRZViewController.m */; };
 		28798D7F18C61187006A247B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28798D7E18C61187006A247B /* Images.xcassets */; };
 		28798D8618C61187006A247B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D8518C61187006A247B /* XCTest.framework */; };
 		28798D8718C61187006A247B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D6618C61187006A247B /* Foundation.framework */; };
 		28798D8818C61187006A247B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D6A18C61187006A247B /* UIKit.framework */; };
 		28798D9018C61187006A247B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28798D8E18C61187006A247B /* InfoPlist.strings */; };
 		28798D9218C61187006A247B /* TRZURLFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9118C61187006A247B /* TRZURLFilterTests.m */; };
+		28798D9D18C61456006A247B /* TRZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9C18C61456006A247B /* TRZViewController.m */; };
+		28798DA018C6252D006A247B /* TRZURLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9F18C6252D006A247B /* TRZURLFilter.m */; };
+		28798DA218C636E7006A247B /* filteringURLs in Resources */ = {isa = PBXBuildFile; fileRef = 28798DA118C636E7006A247B /* filteringURLs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,17 @@
 		28798D7518C61187006A247B /* TRZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRZAppDelegate.h; sourceTree = "<group>"; };
 		28798D7618C61187006A247B /* TRZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZAppDelegate.m; sourceTree = "<group>"; };
 		28798D7918C61187006A247B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28798D7B18C61187006A247B /* TRZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRZViewController.h; sourceTree = "<group>"; };
-		28798D7C18C61187006A247B /* TRZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZViewController.m; sourceTree = "<group>"; };
 		28798D7E18C61187006A247B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28798D8418C61187006A247B /* TRZURLFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZURLFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28798D8518C61187006A247B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		28798D8D18C61187006A247B /* TRZURLFilterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TRZURLFilterTests-Info.plist"; sourceTree = "<group>"; };
 		28798D8F18C61187006A247B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28798D9118C61187006A247B /* TRZURLFilterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZURLFilterTests.m; sourceTree = "<group>"; };
+		28798D9B18C61456006A247B /* TRZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZViewController.h; sourceTree = "<group>"; };
+		28798D9C18C61456006A247B /* TRZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZViewController.m; sourceTree = "<group>"; };
+		28798D9E18C6252D006A247B /* TRZURLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZURLFilter.h; sourceTree = "<group>"; };
+		28798D9F18C6252D006A247B /* TRZURLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZURLFilter.m; sourceTree = "<group>"; };
+		28798DA118C636E7006A247B /* filteringURLs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filteringURLs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +120,13 @@
 				28798D7518C61187006A247B /* TRZAppDelegate.h */,
 				28798D7618C61187006A247B /* TRZAppDelegate.m */,
 				28798D7818C61187006A247B /* Main.storyboard */,
-				28798D7B18C61187006A247B /* TRZViewController.h */,
-				28798D7C18C61187006A247B /* TRZViewController.m */,
 				28798D7E18C61187006A247B /* Images.xcassets */,
+				28798D9B18C61456006A247B /* TRZViewController.h */,
+				28798D9C18C61456006A247B /* TRZViewController.m */,
 				28798D6D18C61187006A247B /* Supporting Files */,
+				28798D9E18C6252D006A247B /* TRZURLFilter.h */,
+				28798D9F18C6252D006A247B /* TRZURLFilter.m */,
+				28798DA118C636E7006A247B /* filteringURLs */,
 			);
 			path = TRZURLFilter;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				28798D7F18C61187006A247B /* Images.xcassets in Resources */,
 				28798D7118C61187006A247B /* InfoPlist.strings in Resources */,
 				28798D7A18C61187006A247B /* Main.storyboard in Resources */,
+				28798DA218C636E7006A247B /* filteringURLs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28798D7318C61187006A247B /* main.m in Sources */,
-				28798D7D18C61187006A247B /* TRZViewController.m in Sources */,
+				28798D9D18C61456006A247B /* TRZViewController.m in Sources */,
+				28798DA018C6252D006A247B /* TRZURLFilter.m in Sources */,
 				28798D7718C61187006A247B /* TRZAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
