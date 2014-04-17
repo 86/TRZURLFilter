@@ -13,6 +13,7 @@
 - (void)addFilteringURLString:(NSString *)string;
 - (void)addFilteringURLs:(NSArray *)urlArray;
 - (void)removeFilteringURLString:(NSString *)string;
+- (void)removeFilteringURLHostString:(NSString *)string;
 - (void)removeAllFilteringURLs;
 - (BOOL)testFilterWithTargetURLString:(NSString *)string;
 - (BOOL)saveChanges;

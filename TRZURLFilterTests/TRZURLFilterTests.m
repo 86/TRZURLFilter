@@ -89,6 +89,14 @@
     XCTAssertTrue ([_urlFilter testFilterWithTargetURLString:@"http://removeurl2.com"]);
 }
 
+- (void)test_removeFilteringURLHostString_OK {
+    [_urlFilter addFilteringURLString:@"http://removeurlhost.com"];
+    NSLog(@"filteringURLs:%@",_urlFilter.filteringURLs);
+    [_urlFilter removeFilteringURLHostString:@"removeurlhost.com"];
+    NSLog(@"filteringURLs:%@",_urlFilter.filteringURLs);
+    XCTAssertFalse ([_urlFilter testFilterWithTargetURLString:@"http://removeurlhost.com"]);
+}
+
 - (void)test_removeAllFilteringURLs_OK {
     [_urlFilter addFilteringURLs:@[@"http://removeall1.com",@"http://removeall2.com",@"http://removeall3.com",]];
     NSLog(@"filteringURLs:%@",_urlFilter.filteringURLs);

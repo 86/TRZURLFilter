@@ -70,6 +70,12 @@
     }
 }
 
+- (void)removeFilteringURLHostString:(NSString *)string {
+    if (string) {
+        [_filteringURLs removeObject:string];
+    }
+}
+
 - (void)removeAllFilteringURLs {
     [_filteringURLs removeAllObjects];
 }

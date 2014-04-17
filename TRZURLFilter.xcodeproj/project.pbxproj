@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281FCEA718CB759B0022F77A /* TRZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FCEA618CB759B0022F77A /* TRZViewController.m */; };
+		284C8AEA19002AFA00DD3179 /* TRZURLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 284C8AE919002AFA00DD3179 /* TRZURLFilter.m */; };
 		28798D6718C61187006A247B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D6618C61187006A247B /* Foundation.framework */; };
 		28798D6918C61187006A247B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D6818C61187006A247B /* CoreGraphics.framework */; };
 		28798D6B18C61187006A247B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D6A18C61187006A247B /* UIKit.framework */; };
@@ -20,8 +22,7 @@
 		28798D8818C61187006A247B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28798D6A18C61187006A247B /* UIKit.framework */; };
 		28798D9018C61187006A247B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28798D8E18C61187006A247B /* InfoPlist.strings */; };
 		28798D9218C61187006A247B /* TRZURLFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9118C61187006A247B /* TRZURLFilterTests.m */; };
-		28798D9D18C61456006A247B /* TRZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9C18C61456006A247B /* TRZViewController.m */; };
-		28798DA018C6252D006A247B /* TRZURLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9F18C6252D006A247B /* TRZURLFilter.m */; };
+		28798D9D18C61456006A247B /* TRZURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28798D9C18C61456006A247B /* TRZURLViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281FCEA518CB759B0022F77A /* TRZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRZViewController.h; path = TRZURLFilter/TRZViewController.h; sourceTree = "<group>"; };
+		281FCEA618CB759B0022F77A /* TRZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRZViewController.m; path = TRZURLFilter/TRZViewController.m; sourceTree = "<group>"; };
+		284C8AE819002AFA00DD3179 /* TRZURLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZURLFilter.h; sourceTree = "<group>"; };
+		284C8AE919002AFA00DD3179 /* TRZURLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZURLFilter.m; sourceTree = "<group>"; };
 		28798D6318C61187006A247B /* TRZURLFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZURLFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28798D6618C61187006A247B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28798D6818C61187006A247B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,19 +48,17 @@
 		28798D7018C61187006A247B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28798D7218C61187006A247B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28798D7418C61187006A247B /* TRZURLFilter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TRZURLFilter-Prefix.pch"; sourceTree = "<group>"; };
-		28798D7518C61187006A247B /* TRZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRZAppDelegate.h; sourceTree = "<group>"; };
-		28798D7618C61187006A247B /* TRZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZAppDelegate.m; sourceTree = "<group>"; };
+		28798D7518C61187006A247B /* TRZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TRZAppDelegate.h; path = TRZURLFilter/TRZAppDelegate.h; sourceTree = "<group>"; };
+		28798D7618C61187006A247B /* TRZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TRZAppDelegate.m; path = TRZURLFilter/TRZAppDelegate.m; sourceTree = "<group>"; };
 		28798D7918C61187006A247B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28798D7E18C61187006A247B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28798D7E18C61187006A247B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TRZURLFilter/Images.xcassets; sourceTree = "<group>"; };
 		28798D8418C61187006A247B /* TRZURLFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZURLFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28798D8518C61187006A247B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		28798D8D18C61187006A247B /* TRZURLFilterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TRZURLFilterTests-Info.plist"; sourceTree = "<group>"; };
 		28798D8F18C61187006A247B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28798D9118C61187006A247B /* TRZURLFilterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZURLFilterTests.m; sourceTree = "<group>"; };
-		28798D9B18C61456006A247B /* TRZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZViewController.h; sourceTree = "<group>"; };
-		28798D9C18C61456006A247B /* TRZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZViewController.m; sourceTree = "<group>"; };
-		28798D9E18C6252D006A247B /* TRZURLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZURLFilter.h; sourceTree = "<group>"; };
-		28798D9F18C6252D006A247B /* TRZURLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZURLFilter.m; sourceTree = "<group>"; };
+		28798D9B18C61456006A247B /* TRZURLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRZURLViewController.h; path = TRZURLFilter/TRZURLViewController.h; sourceTree = "<group>"; };
+		28798D9C18C61456006A247B /* TRZURLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRZURLViewController.m; path = TRZURLFilter/TRZURLViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +88,8 @@
 		28798D5A18C61187006A247B = {
 			isa = PBXGroup;
 			children = (
-				28798D6C18C61187006A247B /* TRZURLFilter */,
+				28FC800518D1FEA9009AA796 /* src */,
+				28FC800618D1FEED009AA796 /* demo */,
 				28798D8B18C61187006A247B /* TRZURLFilterTests */,
 				28798D6518C61187006A247B /* Frameworks */,
 				28798D6418C61187006A247B /* Products */,
@@ -112,22 +116,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		28798D6C18C61187006A247B /* TRZURLFilter */ = {
-			isa = PBXGroup;
-			children = (
-				28798D7518C61187006A247B /* TRZAppDelegate.h */,
-				28798D7618C61187006A247B /* TRZAppDelegate.m */,
-				28798D7818C61187006A247B /* Main.storyboard */,
-				28798D7E18C61187006A247B /* Images.xcassets */,
-				28798D9B18C61456006A247B /* TRZViewController.h */,
-				28798D9C18C61456006A247B /* TRZViewController.m */,
-				28798D6D18C61187006A247B /* Supporting Files */,
-				28798D9E18C6252D006A247B /* TRZURLFilter.h */,
-				28798D9F18C6252D006A247B /* TRZURLFilter.m */,
-			);
-			path = TRZURLFilter;
-			sourceTree = "<group>";
-		};
 		28798D6D18C61187006A247B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +125,7 @@
 				28798D7418C61187006A247B /* TRZURLFilter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = TRZURLFilter;
 			sourceTree = "<group>";
 		};
 		28798D8B18C61187006A247B /* TRZURLFilterTests */ = {
@@ -155,6 +144,31 @@
 				28798D8E18C61187006A247B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28FC800518D1FEA9009AA796 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				284C8AE819002AFA00DD3179 /* TRZURLFilter.h */,
+				284C8AE919002AFA00DD3179 /* TRZURLFilter.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		28FC800618D1FEED009AA796 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				28798D7818C61187006A247B /* Main.storyboard */,
+				28798D7518C61187006A247B /* TRZAppDelegate.h */,
+				28798D7618C61187006A247B /* TRZAppDelegate.m */,
+				281FCEA518CB759B0022F77A /* TRZViewController.h */,
+				281FCEA618CB759B0022F77A /* TRZViewController.m */,
+				28798D9B18C61456006A247B /* TRZURLViewController.h */,
+				28798D9C18C61456006A247B /* TRZURLViewController.m */,
+				28798D7E18C61187006A247B /* Images.xcassets */,
+				28798D6D18C61187006A247B /* Supporting Files */,
+			);
+			name = demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TRZ;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = yam;
 				TargetAttributes = {
 					28798D8318C61187006A247B = {
@@ -256,9 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28798D7318C61187006A247B /* main.m in Sources */,
-				28798D9D18C61456006A247B /* TRZViewController.m in Sources */,
-				28798DA018C6252D006A247B /* TRZURLFilter.m in Sources */,
+				284C8AEA19002AFA00DD3179 /* TRZURLFilter.m in Sources */,
+				28798D9D18C61456006A247B /* TRZURLViewController.m in Sources */,
 				28798D7718C61187006A247B /* TRZAppDelegate.m in Sources */,
+				281FCEA718CB759B0022F77A /* TRZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +310,7 @@
 				28798D7918C61187006A247B /* Base */,
 			);
 			name = Main.storyboard;
+			path = TRZURLFilter;
 			sourceTree = "<group>";
 		};
 		28798D8E18C61187006A247B /* InfoPlist.strings */ = {
@@ -312,7 +328,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -351,7 +366,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -409,7 +423,6 @@
 		28798D9918C61187006A247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TRZURLFilter.app/TRZURLFilter";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -432,7 +445,6 @@
 		28798D9A18C61187006A247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TRZURLFilter.app/TRZURLFilter";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
